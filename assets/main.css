@@ -68,11 +68,13 @@ body{
     width: 100%;
     text-align: right;
     padding-right: 2rem;
+
 }
 
 .menu a{
     padding: 2rem;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .main-left{
@@ -161,6 +163,11 @@ li {
 
 .project:hover {
     background-color: #c7c2c25d;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 input{
