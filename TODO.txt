@@ -1,8 +1,4 @@
 TODO:
-Upload an image
-Make navbar clickable - animate transition
 Upload project
-Create contact form
 Create CV
 Make cv download on button click
-Upload portfolio to GH-PAGES
