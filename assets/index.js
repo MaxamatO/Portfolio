@@ -9,7 +9,6 @@ const appearOnScroll = new IntersectionObserver(function
     (entries, appearOnScroll) {
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
-                console.log(fader);
                 return;
             } else {
                 entry.target.classList.add("appear");
@@ -20,4 +19,11 @@ const appearOnScroll = new IntersectionObserver(function
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
+})
+
+const mobileNav = document.querySelector(".menu-list");
+const burgerBtn = document.querySelector(".burger");
+
+burgerBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle("active");
 })
