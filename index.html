@@ -143,9 +143,9 @@
         const sendEmail = () => {
             Email.send({
                  Host : "smtp.elasticemail.com",
-                 Username : "maksdfg123@gmail.com",
-                 Password : "A8BCF3750687BB3524983D89958D485773D7",
-                 To : 'maksdfg123@gmail.com',
+                 Username : `${process.end.USERNAME}`,
+                 Password : `${process.env.PASSWORD}`,
+                 To : `${process.env.SMTP_TO}`,
                  From : document.getElementById("email").value,
                  Subject : "Contact from portfolio",
                  Body : document.getElementById("message")
