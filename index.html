@@ -139,19 +139,5 @@
             </div>
         </div>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js">
-        const sendEmail = () => {
-            Email.send({
-                 Host : "smtp.elasticemail.com",
-                 Username : `${process.end.USERNAME}`,
-                 Password : `${process.env.PASSWORD}`,
-                 To : `${process.env.SMTP_TO}`,
-                 From : document.getElementById("email").value,
-                 Subject : "Contact from portfolio",
-                 Body : document.getElementById("message")
-             }).then(
-                 message => alert(message));
-        };
-    </script>
 </body>
 </html>
